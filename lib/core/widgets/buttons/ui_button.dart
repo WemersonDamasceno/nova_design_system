@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nova_design_system/core/extensions/theme_extension.dart';
 import 'package:nova_design_system/core/theme/ui_app_colors.dart';
+import 'package:nova_design_system/core/theme/ui_app_spacing.dart';
 import 'package:nova_design_system/core/widgets/buttons/ui_status_button.dart';
 
 class UIButton extends StatelessWidget {
@@ -67,7 +68,10 @@ class UIButton extends StatelessWidget {
         onPressed: () => isDisabled || isLoading ? null : onPressed(),
         icon: iconData != null && !isLoading ? Icon(iconData) : null,
         style: ElevatedButton.styleFrom(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          padding: const EdgeInsets.symmetric(
+            horizontal: UIAppSpacing.sm,
+            vertical: UIAppSpacing.xsm,
+          ),
           elevation: 0,
           backgroundColor:
               isFilled ? UIAppColors.blueAccent : Colors.transparent,
@@ -93,8 +97,8 @@ class UIButton extends StatelessWidget {
             ),
           ),
           child: const SizedBox(
-            height: 24,
-            width: 24,
+            height: UIAppSpacing.md,
+            width: UIAppSpacing.md,
             child: CircularProgressIndicator(),
           ),
         ),
