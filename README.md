@@ -1,39 +1,54 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+### 🏗 Nova Design System  
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+🚀 Um Design System modular para projetos Flutter, criado para garantir consistência visual e facilitar a manutenção da UI.  
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+## 📌 Instalação  
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Adicione o pacote ao seu `pubspec.yaml`:  
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  nova_design_system:
+    git:
+      url: https://github.com/WemersonDamasceno/nova_design_system.git
+      ref: main
 ```
 
-## Additional information
+Execute:  
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```sh
+flutter pub get
+```
+
+## 🎨 Componentes  
+
+O Design System inclui:  
+
+✅ **Cores** - Paleta de cores centralizada para manter a identidade visual.  
+✅ **Tipografia** - Estilos de texto padronizados para títulos, subtítulos e corpo de texto.  
+✅ **Botões** - Variantes de botões para ações primárias e secundárias.  
+✅ **Inputs** - Campos de texto estilizados e prontos para uso.  
+✅ **Componentes Reutilizáveis** - Widgets customizados para layouts consistentes.  
+
+## 🔥 Exemplo de Uso  
+
+```dart
+import 'package:nova_design_system/nova_design_system.dart';
+
+UIButton.filled(
+  label: 'Clique aqui',
+  onPressed: () {
+    print('Botão pressionado!');
+  },
+)
+```
+
+## 🛠 Contribuindo  
+
+Fique à vontade para abrir **issues** e enviar **pull requests**. Qualquer melhoria ou sugestão será bem-vinda!  
+
+1. Faça um fork do repositório  
+2. Crie uma branch (`git checkout -b feature/minha-feature`)  
+3. Commit suas alterações (`git commit -m 'Adiciona nova feature'`)  
+4. Faça push para a branch (`git push origin feature/minha-feature`)  
+5. Abra um Pull Request 🚀  
